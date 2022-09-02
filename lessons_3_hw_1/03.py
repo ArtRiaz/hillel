@@ -5,4 +5,15 @@ a = input('Введите слова в формате snake_case: ')
 b = a.replace('_',' ')
 c = b.title()
 d = c.replace(' ','')
-print('Слова в формате Camel Case:',d)
+print('Слова в формате Camel Case:', d)
+
+
+
+print('Преобразование snake_case в Camel Case')
+a = input('Введите слова в формате snake_case: ')
+
+b = a.title()
+c = b.split(sep= '_')
+d = ''.join(c)
+print('Слова в формате Camel Case:', d)
+
