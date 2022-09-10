@@ -1,15 +1,15 @@
-# Вычисления объёма и площадь конуса
+# Вычеслить площадь и периметр прямоугольного треугольника
 
 import math
-from math import pi
 
-h = float(input('Введите высоту конуса: '))
-r = float(input('Введите радиус конуса: '))
+print('Введите значение двух катетов треугольника')
+a = float(input('Введите длинну треугольника: '))
+b = float(input('Введите высоту треугольника: '))
 
-def cone_surface_area_and_volume(h,r):
-    volume = h/3*pi*r**2 # Формула объёма
-    base_area = pi * r**2 # Находим площадь основания конуса
-    lateral_area = pi * r * math.sqrt(r**2 + h**2) # Находим площадь боковой поверхности конуса
-    return volume, base_area + lateral_area
 
-print(cone_surface_area_and_volume(h,r))
+def triangle_area_and_perimeter(a, b):
+    c = math.sqrt(a ** 2 + b ** 2)  # Находим гипотинузу
+    return a * b / 2, a + b + c
+
+
+print(triangle_area_and_perimeter(a, b))
