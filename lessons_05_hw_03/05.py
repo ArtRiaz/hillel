@@ -1,15 +1,15 @@
-"""Meaning
-funcion sing(x)"""
+'''Meaning
+funcion sing(x)'''
 x = int(input('Enter meaning x: '))
 
 
 def sign(x):
-    return x
+    if x > 0:
+        return 1
+    elif x < 0:
+        return -1
+    else:
+        return 0
 
 
-if sign(x) > 0:
-    print('sing(x)= 1')
-elif sign(x) < 0:
-    print('sing(x)= -1')
-else:
-    print('sing(x)= 0')
+sign(x)
