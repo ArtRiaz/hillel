@@ -8,7 +8,7 @@ def is_even(number):
     return number % 2 == 0
 
 
-if is_even(number) is True:
+if is_even(number):
     print('even number')
 else:
     print('ood number')
