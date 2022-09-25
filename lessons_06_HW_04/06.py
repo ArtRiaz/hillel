@@ -8,7 +8,7 @@ def sum_symbol_codes(first, last):
     return summa
 summa = 0
 
-for i in range(ord(first),ord(last)):
+for i in range(ord(first),ord(last) + 1):
     summa = summa + i
 
 
