@@ -1,3 +1,6 @@
+
+
+
 """Twelve digit number"""
 from random import randint
 
@@ -20,14 +23,13 @@ number = randint(100000000000,999999999999)
 get_max_digit(number)
 
 
-def get_max_digit(number):
+def main():
     my_str = str(number)
-
-    for _ in my_str:
-        maximal_number = max(my_str)
-    print('Maximal number',maximal_number)
-
+    maximal_number = max(my_str)
+    print('Maximal number string: ',maximal_number)
     return maximal_number
 
 
-get_max_digit(number)
+if __name__ == '__main__':
+    main()
+
