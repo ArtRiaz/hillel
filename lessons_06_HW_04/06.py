@@ -4,12 +4,13 @@
 first = input('Enter meaning: ')
 last = input('Enter meaning: ')
 
+
 def sum_symbol_codes(first, last):
+    summa = 0
+
+    for i in range(ord(first), ord(last) + 1):
+        summa = summa + i
     return summa
-summa = 0
-
-for i in range(ord(first),ord(last) + 1):
-    summa = summa + i
 
 
-print(sum_symbol_codes(first, last))
+sum_symbol_codes(first, last)
