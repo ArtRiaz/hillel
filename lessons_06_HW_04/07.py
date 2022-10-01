@@ -4,7 +4,6 @@
 from random import randint
 
 number = randint(1,10)
-print('Enter the number 1-10')
 a = int(input('Enter number: '))
 
 while number != a:
