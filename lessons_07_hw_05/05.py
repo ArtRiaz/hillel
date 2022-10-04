@@ -1,9 +1,16 @@
 """List 1 - 100"""
+"""List 1 - 100"""
 def gen_primes():
-   my_list = []
-   for i in range(1, 101):
-       my_list.append(i)
-   return my_list
+    lst = []
+    for i in range(1,101):
+        if i < 2:
+            continue
+        for j in lst:
+            if i % j == 0:
+                break
+        else:
+            lst.append(i)
+    return lst
 
 
-gen_primes()
+print(gen_primes())
