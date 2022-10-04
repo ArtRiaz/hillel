@@ -1,5 +1,5 @@
 """List 1 - 100"""
-"""List 1 - 100"""
+
 def gen_primes():
     lst = []
     for i in range(1,101):
