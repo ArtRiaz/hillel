@@ -8,12 +8,19 @@ def password_gen(length):
     litters_1 = 'ABCDEFGHIJKLMNOPQRTUVWXYZ'
     litters_2 = 'abcdefghijklmnopqrstuvwxyz_'
     my_password = digits + litters_1 + litters_2
-    password = ''.join(random.sample(my_password, length))
+    password = []
 
-    if length == 8:
-        return (password)
-    else:
-        return 'Password must be 8 symbol'
+    while len(password) < length:
+        a = random.choice(my_password)
+        password.append(a)
+    if not any(char in password for char in digits):
+        return password_gen(length)
+    elif not any(char in password for char in litters_1):
+        return password_gen(length)
+    elif not any(char in password for char in litters_2):
+        return password_gen(length)
+
+    return ''.join(password)
 
 
 password_gen(8)
