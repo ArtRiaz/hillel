@@ -6,7 +6,7 @@ def indx(lst, elem):
     for index, value in enumerate(lst, 0):
         if elem == value:
             return index
-        elif value is None:
+        elif elem is None:
             return None
 
 
